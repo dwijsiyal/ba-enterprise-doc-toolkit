@@ -67,7 +67,7 @@ though many BAs will find that a natural sequence.
 
 ## Prompt Templates
 
-- **Each skill has a template the an individual can follow to get a near standardized result** see [PROMPT_TEMPLATES](https://github.com/dwijsiyal/ba-enterprise-doc-toolkit/blob/main/PROMPT_TEMPLATES.md)
+- **Each skill has a template the an individual can follow to get a near standardized result** see [PROMPT_TEMPLATES](https://github.com/dwijsiyal/ba-enterprise-doc-toolkit/blob/master/PROMPT_TEMPLATES.md)
 
 ## License
 
