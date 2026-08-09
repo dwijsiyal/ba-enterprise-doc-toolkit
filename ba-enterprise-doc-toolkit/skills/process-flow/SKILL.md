@@ -21,6 +21,22 @@ from. Say this plainly to the user if they ask for a "diagram" or
 "flowchart": this environment doesn't render flowcharts, but the output is
 built to paste straight into Visio or Lucidchart's swimlane templates.
 
+If the input follows this plugin's standard prompt template (see
+`PROMPT_TEMPLATES.md` at the plugin root — labeled fields such as
+`Project Name:`, `Process Description:`, `Scope:`, `Actors/Systems
+Involved:`), map each labeled field directly instead of re-extracting it
+from prose. The template is optional; free-form text works the same way
+through inference.
+
+Also check whether an organization template is available for this
+document type: either a file the user has uploaded or referenced in this
+conversation, or a bundled example at
+`${CLAUDE_PLUGIN_ROOT}/org-templates/process-flow-example.docx` (see
+`org-templates/README.md` for how organizations add these). If one
+exists, mirror its table structure and column naming as closely as
+possible while still covering everything required below. If none is
+available, use this skill's default structure.
+
 ## Step 1: Determine scope — Current State, Future State, or both
 
 Infer from the input: if it describes an existing process being replaced,

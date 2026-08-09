@@ -18,6 +18,23 @@ Produce a formal Requirements Document from a plain-language project
 description, structured in the three standard BA layers: Business,
 Functional, and Non-Functional, each MoSCoW-prioritized and traceable.
 
+If the input follows this plugin's standard prompt template (see
+`PROMPT_TEMPLATES.md` at the plugin root — labeled fields such as
+`Project Name:`, `Project Description:`, `Business Needs/Goals:`,
+`Known Functional Needs:`, `Known Non-Functional Needs:`, `Anything
+explicitly out of scope:`), map each labeled field directly instead of
+re-extracting it from prose. The template is optional; free-form text
+works the same way through inference.
+
+Also check whether an organization template is available for this
+document type: either a file the user has uploaded or referenced in this
+conversation, or a bundled example at
+`${CLAUDE_PLUGIN_ROOT}/org-templates/requirements-document-example.docx`
+(see `org-templates/README.md` for how organizations add these). If one
+exists, mirror its section structure and requirement ID conventions as
+closely as possible while still covering everything required below. If
+none is available, use this skill's default structure.
+
 ## Step 1: Draft Business Requirements (BR)
 
 Business Requirements state *what the organization needs*, independent of

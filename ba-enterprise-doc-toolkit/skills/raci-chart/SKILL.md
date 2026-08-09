@@ -16,6 +16,22 @@ metadata:
 Produce a RACI matrix (Responsible, Accountable, Consulted, Informed) from
 a plain-language project description.
 
+If the input follows this plugin's standard prompt template (see
+`PROMPT_TEMPLATES.md` at the plugin root — labeled fields such as
+`Project Name:`, `Project Description:`, `Key Activities/Phases:`,
+`Roles Involved:`), map each labeled field directly instead of
+re-extracting it from prose. The template is optional; free-form text
+works the same way through inference.
+
+Also check whether an organization template is available for this
+document type: either a file the user has uploaded or referenced in this
+conversation, or a bundled example at
+`${CLAUDE_PLUGIN_ROOT}/org-templates/raci-chart-example.xlsx` (see
+`org-templates/README.md` for how organizations add these). If one
+exists, mirror its structure and role/column naming as closely as
+possible while still covering everything required below. If none is
+available, use this skill's default structure.
+
 ## Step 1: Identify activities (rows)
 
 If the user supplies a list of activities or phases, use it. Otherwise,

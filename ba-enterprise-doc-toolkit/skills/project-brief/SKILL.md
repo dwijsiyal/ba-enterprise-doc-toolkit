@@ -26,6 +26,24 @@ Accept whatever project description the user provides — this can be a
 sentence, a paragraph, or several paragraphs of unstructured plain language.
 Do not ask the user to reformat it or answer a questionnaire first.
 
+If the input follows this plugin's standard prompt template (see
+`PROMPT_TEMPLATES.md` at the plugin root — labeled fields such as
+`Project Name:`, `Problem / Opportunity:`, `Objectives:`, `In Scope:`,
+`Out of Scope:`, `Key Stakeholders:`, `Known Timeline / Deadline:`,
+`Known Constraints:`), map each labeled field directly into its
+corresponding section below instead of re-extracting it from prose. The
+template is optional and exists to make output more consistent across a
+team — free-form text works exactly the same way through inference.
+
+Also check whether an organization template is available for this
+document type: either a file the user has uploaded or referenced in this
+conversation, or a bundled example at
+`${CLAUDE_PLUGIN_ROOT}/org-templates/project-brief-example.docx` (see
+`org-templates/README.md` for how organizations add these). If one
+exists, mirror its section structure, headings, and tone as closely as
+possible while still covering every section required below. If none is
+available, use this skill's default structure.
+
 Identify the project name from the description. If no name is stated or
 implied, ask the user for one before proceeding — everything else in this
 skill can be inferred, but a nameless document looks unfinished.
