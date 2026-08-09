@@ -1,7 +1,7 @@
 # BA Enterprise Doc Toolkit
 
 A Claude Cowork plugin that generates standard business analysis documents
-from a plain-language project description — entirely inside your
+from a plain-language project description entirely inside your
 organization's own Claude Cowork environment.
 
 ## Why this exists
