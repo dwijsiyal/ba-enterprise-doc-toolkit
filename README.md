@@ -65,6 +65,10 @@ though many BAs will find that a natural sequence.
   first draft. The BA makes the final judgment calls — inferred content is
   always flagged for review, never silently presented as fact.
 
+## Prompt Templates
+
+- ** Each skill has a template the an individual can follow to get a near standardized result** see [PROMPT_TEMPLATES](https://github.com/dwijsiyal/ba-enterprise-doc-toolkit/blob/main/PROMPT_TEMPLATES.md)
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
