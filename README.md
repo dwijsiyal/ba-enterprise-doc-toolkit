@@ -8,6 +8,7 @@ organization's own Claude Cowork environment.
 
 - Step 1: Download file [PLUGIN PACKAGE](https://github.com/dwijsiyal/ba-enterprise-doc-toolkit/blob/master/ba-enterprise-doc-toolkit.plugin)
 <img width="1822" height="647" alt="image" src="https://github.com/user-attachments/assets/c0905778-f7c9-47f5-bf27-0c27008faa1b" />
+
 - Step 2: Open Claude Desktop.
 - Step 3: Go to Customize -> Plugin -> Add -> Upload Plugin -> Drag and Drop the downloaded file.
 <img width="507" height="347" alt="image" src="https://github.com/user-attachments/assets/3eb967f8-ac95-4234-9d4f-7189d6135a1e" />
